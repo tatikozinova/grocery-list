@@ -52,8 +52,9 @@ export class GroceryList extends Component{
                             <ul>
                                 {this.state.groceryListInput.map((item, index)=>(
 
-                                <li onClick={this.crossedWord} key={index} img src={bag} alt='check-box' width='40px'>
+                                <li onClick={this.crossedWord} key={index}>
                                 {item}
+                                <img src={bag} alt='check-box' width='40px'/>
                                 </li>
                                 ))}
                             </ul>
